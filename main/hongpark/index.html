@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 웹 개발 카드!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+<header>
+
+    <h1>이형진</h1>
+    <h3>나는 에코</h3>
+</header>
+
+<main class="main">
+    <section id="sect">
+        <ul>
+            <li>스프링부트</li>
+            <li>배포</li>
+            <li>도커</li>
+        </ul>
+    </section>
+    <section>
+    <a href="https://developer.mozilla.org/"></a>
+    <button id="btn">이것은 버튼</button>
+    </section>
+
+    <section>
+    <p id="message">버튼을 눌러 주세요.</p>
+    <button id="greeting-button" type="button">인사하기</button>
+    </section>
+</main>
+<footer>연락처와 저작권</footer>
+<script>
+    const message = document.querySelector("#message");
+    const greetingButton = document.querySelector("#greeting-button");
+
+    greetingButton.addEventListener("click", function () {
+        message.textContent = "웹 개발을 시작합니다!";
+    });
+</script>
+</body>
+</html>
